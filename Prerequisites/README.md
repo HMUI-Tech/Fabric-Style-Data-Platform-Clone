@@ -40,3 +40,4 @@ pip install pyarrow great_expectations pydantic
 - python-dotenv
   Lets you keep secrets (DB URL, passwords) in a .env file and load them into your script via environment variables. Cleaner and safer than hard-coding
 
+
