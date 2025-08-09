@@ -1,0 +1,7 @@
+# .env  (private, used on your machine)
+PGHOST=localhost
+PGPORT=5432
+PGUSER=dev
+PGPASSWORD=dev
+PGDATABASE=fabric_local
+DATABASE_URL=postgresql://dev:dev@localhost:5432/fabric_local
