@@ -1,4 +1,31 @@
-# 0) Python packages
+# 0) Create the Project and Virtual environment
+```bash
+# Create project folder and enter it
+mkdir fabric-clone-postgres && cd fabric-clone-postgres
+
+# Create a virtual environment
+python -m venv .venv
+
+# ACTIVATE the venv (Windows PowerShell)
+# .venv\Scripts\Activate.ps1
+
+# ACTIVATE the venv (macOS/Linux bash/zsh)
+# source .venv/bin/activate
+
+# Upgrade pip
+python -m pip install --upgrade pip
+```
+
+
+# 1) Python packages
+
+## Install Packages
+```bash
+pip install psycopg2-binary pandas dbt-postgres python-dotenv
+# optional performance/quality tools
+pip install pyarrow great_expectations pydantic
+```
+
 - psycopg2-binary
   The Postgres driver for Python. It’s how your Python code talks to your PostgreSQL database (run SQL, load data, etc.).
 - pandas
@@ -12,3 +39,4 @@
   Helpful for validating and parsing configuration or file schemas in Python. If your pipeline expects certain columns/types, Pydantic can enforce that before loading.
 - python-dotenv
   Lets you keep secrets (DB URL, passwords) in a .env file and load them into your script via environment variables. Cleaner and safer than hard-coding
+
